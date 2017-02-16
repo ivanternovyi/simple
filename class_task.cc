@@ -27,7 +27,7 @@ public:
 		cout<<"Input material(1 - wooden, 2 - plasmastic, 3 - cardboard): ";
 		cin>>this->material;
 	}
-    unsigned get_size()
+        unsigned get_size()
 	{
 		return this->size;
 	}
