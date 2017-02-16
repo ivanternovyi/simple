@@ -13,6 +13,11 @@ private:
 public:
 	cube():size(0), color(' '), material(0){};
 	cube(unsigned s, char c, short m):size(s), color(c), material(m){};
+	cube(const cube &object){
+        	size = object.size;
+        	color = object.color;
+        	material = object.material;
+        }
 	void set_cube()
 	{
 		cout<<"Input size: ";
