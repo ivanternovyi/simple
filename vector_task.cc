@@ -83,13 +83,7 @@ public:
 
 	void delete_by_index()
 	{
-		for(int i = 0; i < size; i++)
-		{
-			if(i == k)
-			{
-				array[i] = 0;
-			}
-		}
+		array[k] = 0;
 	}
 
 	void input_element_by_order()
