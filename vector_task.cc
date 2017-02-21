@@ -120,9 +120,9 @@ public:
 int main()
 {
 	vector v1;
-  v1.input();
+  	v1.input();
 	v1.delete_by_index ();
-  v1.output ();
+  	v1.output ();
 	v1.input_element_by_order ();
 	v1.output ();
 	return 0;
