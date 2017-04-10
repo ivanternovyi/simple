@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+    double result=0;
+    double a=0;
+    cout<<"Enter the number: ";
+    cin>>result;
+    char operation;
+    
+    while(true)
+    { 
+
+    cout<<"Enter the operation: ";
+    cin>>operation;
+    
+        if (operation != '=')
+       {   
+         cout<<"Enter the number: ";
+         cin>>a;
+       }
+    
+            switch(operation) 
+          {
+              case '+': result+=a;
+                break;
+              case '-': result-=a;
+                break;
+              case '*': result*=a;
+                break;
+              case '/': result/=a;
+                break;
+              case '=': cout<<"Result= "<<result; 
+                return 0;
+              default: cout<<"Bad operation"<<endl ;
+                break;
+             
+          }
+    
+   }
+   
+       
+}
